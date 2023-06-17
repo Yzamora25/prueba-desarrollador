@@ -1,0 +1,116 @@
+input {
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  background: #EFF8FF;
+  border: 1px solid #1570EF;
+  border-radius: 6px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+ /* estilo para el segundo header */
+ @media (max-width: 991px) {
+   .flex-columns {
+     display: flex;
+     flex-wrap: wrap;
+     list-style: none;
+     padding: 0;
+     color: rgb(114, 114, 114);
+   }
+
+   .flex-columns li {
+     flex-basis: 50%;
+     padding: 5px;
+   }
+ }
+
+ /* estilo para los botones del header login y sign up */
+ @media (max-width: 767px) {
+   .collapse.navbar-collapse {
+     flex-direction: column;
+     align-items: center;
+   }
+
+   .navbar-nav {
+     margin-top: 1rem;
+   }
+
+   .d-flex.flex-wrap.align-items-center {
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+   }
+
+   .d-flex.flex-wrap.align-items-center button {
+     margin-bottom: 1rem;
+     width: 300px;
+   }
+ }
+
+ /* Estilos adicionales para pantallas grandes */
+ @media (min-width: 992px) {
+   .d-flex.justify-content-lg-start {
+     justify-content: start;
+   }
+ }
+
+ /* estilo para los botones de la seccion 1 */
+ @media (max-width: 767px) {
+   .my-3 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+   }
+
+   .btn {
+     margin-bottom: 10px;
+    width: 300px;
+   }
+
+   .img-fluid {
+     display: block;
+     margin: 0 auto;
+   }
+ }
+
+/* estilo para eliminar la linea de los links del footer */
+a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+/* footer */
+@media (max-width: 767px) {
+  .footer-responsive {
+    flex-direction: column;
+  }
+
+  .footer-responsive .col-md-2 {
+    margin-top: 1.5rem;
+  }
+
+  .footer-responsive ul.list-inline {
+    column-count: 2;
+    column-gap: 1rem;
+  }
+}
+
+/* estilos para dropdown */
+.dropdown-menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.dropdown-menusub {
+  float: right;
+}
+
+.dropdown-menusub li {
+  display: inline;
+  margin-right: 10px;
+  
+
+}
